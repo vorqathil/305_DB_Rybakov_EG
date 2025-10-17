@@ -1,4 +1,4 @@
-И1|Devonte Stamm|marianne.krajcik@bartoletti.com|male|2010-09-19|technician
+1|Devonte Stamm|marianne.krajcik@bartoletti.com|male|2010-09-19|technician
 2|Merritt Grimes|rempel.yvette@kertzmann.com|male|2018-06-12|other
 3|Dianna Herzog|jarrell.stokes@gmail.com|female|2013-11-19|writer
 4|Jamel Nader|edgar.bayer@kohler.com|male|2012-09-28|technician
