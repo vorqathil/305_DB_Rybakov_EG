@@ -117,8 +117,8 @@ echo "8. С помощью рекурсивного CTE определить, н
 echo "--------------------------------------------------"
 PGPASSWORD="postgres" /opt/homebrew/opt/postgresql@18/bin/psql -U postgres -d movies_rating -c "with recursive birthday_years as (
     select 
-        2000 as year,
-        to_date('2000-01-01', 'YYYY-MM-DD') as birthday_date
+        2004 as year,
+        to_date('2004-11-04', 'YYYY-MM-DD') as birthday_date
     union all
     select 
         year + 1,
