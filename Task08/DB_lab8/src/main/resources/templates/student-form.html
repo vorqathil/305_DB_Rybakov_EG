@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма студента</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: inline-block; width: 150px; }
+        input, select { padding: 5px; width: 250px; }
+        .btn { padding: 10px 20px; margin: 5px; border: none; border-radius: 3px; cursor: pointer; }
+        .btn-save { background-color: #4CAF50; color: white; }
+        .btn-cancel { background-color: #f44336; color: white; }
+    </style>
+</head>
+<body>
+    <h1 th:text="${student.id == null ? 'Добавить студента' : 'Редактировать студента'}"></h1>
+
+    <form th:action="@{/student/save}" th:object="${student}" method="post">
+        <input type="hidden" th:field="*{id}">
+
+        <div class="form-group">
+            <label>Фамилия:</label>
+            <input type="text" th:field="*{lastName}" required>
+        </div>
+
+        <div class="form-group">
+            <label>Имя:</label>
+            <input type="text" th:field="*{firstName}" required>
+        </div>
+
+        <div class="form-group">
+            <label>Отчество:</label>
+            <input type="text" th:field="*{middleName}">
+        </div>
+
+        <div class="form-group">
+            <label>Группа:</label>
+            <select th:field="*{group.id}" required>
+                <option th:each="group : ${groups}"
+                        th:value="${group.id}"
+                        th:text="${group.groupNumber}"></option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Специальность:</label>
+            <select th:field="*{specialization.id}" required>
+                <option th:each="spec : ${specializations}"
+                        th:value="${spec.id}"
+                        th:text="${spec.name}"></option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Пол:</label>
+            <input type="radio" th:field="*{gender}" value="Мужской" id="male"> <label for="male">Мужской</label>
+            <input type="radio" th:field="*{gender}" value="Женский" id="female"> <label for="female">Женский</label>
+        </div>
+
+        <div class="form-group">
+            <label>Год поступления:</label>
+            <input type="number" th:field="*{enrollmentYear}" required>
+        </div>
+
+        <button type="submit" class="btn btn-save">Сохранить</button>
+        <a href="/" class="btn btn-cancel" style="text-decoration: none; display: inline-block;">Отмена</a>
+    </form>
+</body>
+</html>

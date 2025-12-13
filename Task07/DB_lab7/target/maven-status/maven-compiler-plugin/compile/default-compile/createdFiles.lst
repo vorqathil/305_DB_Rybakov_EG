@@ -1,0 +1,8 @@
+ru/vorqathil/db_lab7/console/ConsoleApplication.class
+ru/vorqathil/db_lab7/entity/Student.class
+ru/vorqathil/db_lab7/entity/Group.class
+ru/vorqathil/db_lab7/controllers/StudentController.class
+ru/vorqathil/db_lab7/repositories/StudentRepository.class
+ru/vorqathil/db_lab7/DbLab7Application.class
+ru/vorqathil/db_lab7/services/StudentService.class
+ru/vorqathil/db_lab7/repositories/GroupRepository.class

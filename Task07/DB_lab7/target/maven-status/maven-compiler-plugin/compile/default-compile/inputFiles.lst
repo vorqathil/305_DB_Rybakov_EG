@@ -1,0 +1,8 @@
+/Users/vorqathil/university/db lessons/305_DB_Rybakov_EG/Task07/DB_lab7/src/main/java/ru/vorqathil/db_lab7/DbLab7Application.java
+/Users/vorqathil/university/db lessons/305_DB_Rybakov_EG/Task07/DB_lab7/src/main/java/ru/vorqathil/db_lab7/console/ConsoleApplication.java
+/Users/vorqathil/university/db lessons/305_DB_Rybakov_EG/Task07/DB_lab7/src/main/java/ru/vorqathil/db_lab7/controllers/StudentController.java
+/Users/vorqathil/university/db lessons/305_DB_Rybakov_EG/Task07/DB_lab7/src/main/java/ru/vorqathil/db_lab7/entity/Group.java
+/Users/vorqathil/university/db lessons/305_DB_Rybakov_EG/Task07/DB_lab7/src/main/java/ru/vorqathil/db_lab7/entity/Student.java
+/Users/vorqathil/university/db lessons/305_DB_Rybakov_EG/Task07/DB_lab7/src/main/java/ru/vorqathil/db_lab7/repositories/GroupRepository.java
+/Users/vorqathil/university/db lessons/305_DB_Rybakov_EG/Task07/DB_lab7/src/main/java/ru/vorqathil/db_lab7/repositories/StudentRepository.java
+/Users/vorqathil/university/db lessons/305_DB_Rybakov_EG/Task07/DB_lab7/src/main/java/ru/vorqathil/db_lab7/services/StudentService.java
